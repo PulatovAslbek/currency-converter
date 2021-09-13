@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Currency Calculator</h2>
+    <p class="lead">Convert the currency</p>
+    <form class="form-inline">
+      <div class="form-group">
+        <input type="number" class="form-control" id="amount" />
+      </div>
+      <div class="form-group">
+        <select class="form-control" id="currency-1" required>
+          <option>USD</option>
+          <option>EUR</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>convert to</label>
+        <select class="form-control" id="currency-2" required>
+          <option>EUR</option>
+          <option>USD</option>
+        </select>
+      </div>
+      <button type="submit" class="btn calculate-btn">Show me the result!</button>
+    </form>
+    <div class="result">
+      <p>
+        <span class="given-amount"></span>
+        <span class="base-currency"></span>
+        <span class="final-result"></span>
+        <span class="second-currency"></span>
+      </p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
